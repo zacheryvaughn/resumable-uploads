@@ -5,7 +5,7 @@ import shutil
 
 app = Flask(__name__)
 app.config.from_mapping(
-    UPLOAD_ROOT=Path(__file__).parent / "uploads",
+    UPLOAD_ROOT=Path(__file__).parent.parent / "uploads",
     CHUNK_TTL_HOURS=6,
     VERIFY_UPLOADS=False,
 )
