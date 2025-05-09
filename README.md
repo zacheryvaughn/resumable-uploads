@@ -1,6 +1,7 @@
 # Resumable File Uploads with Python-Flask
 
-A modern web application that demonstrates resumable file uploads using Flask and Resumable.js. This project allows users to upload large files reliably by splitting them into smaller chunks, with the ability to pause, resume, and recover from network interruptions.
+An example of resumable file uploads using Flask and Resumable.js.
+resumable.js -> https://github.com/23/resumable.js
 
 ## Features
 
