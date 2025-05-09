@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python-Flask Resumable Uploads</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Python-Flask Resumable Uploads</h1>
+  </header>
+
+  <main>
+    <div class="upload-container">
+      <p><strong>Drag & Drop</strong> or <strong>Select Files</strong> to upload.</p>
+      <div class="controls">
+        <a href="#" id="browseButton" class="browse-button">Select Files</a>
+      </div>
+    </div>
+    
+    <div class="status-container">
+      <div class="status-header">
+        <h3 id="upload-status">Upload Status<span id="status">Not Uploading</span></h3>
+        <button id="toggle" class="toggle-button" disabled>Pause</button>
+      </div>
+      <p style="display: none;"><span id="progress"></span></p>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar" style="width: 0%">0%</div>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script src="{{ url_for('static', filename='js/resumable.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

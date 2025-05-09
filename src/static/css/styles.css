@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #333;
+}
+
+h3 {
+  margin: 0;
+}
+
+.upload-container {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dragover {
+  border-color: #2277FF !important;
+  background-color: #2277FF11 !important;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.browse-button {
+  background-color: #2277FFff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.toggle-button {
+  background-color: #2277FF;
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.status-container {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#upload-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#status {
+  font-size: 14px;
+  color: #888;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 100px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  color: white;
+  height: 20px;
+  background-color: #2277FF;
+  width: 0%;
+  transition: width 0.3s;
+  text-align: center;
+  line-height: 20px;
+  transition: width 0.5s;
+}
