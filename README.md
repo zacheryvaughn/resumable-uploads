@@ -1,6 +1,6 @@
 # Resumable File Uploads with Python-Flask
 
-An example of resumable file uploads using Flask and Resumable.js.
+An example of resumable file uploads using Flask and Resumable.js.<br>
 resumable.js -> https://github.com/23/resumable.js
 
 ## Features
